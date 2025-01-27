@@ -159,3 +159,5 @@ for episode in range(num_episodes):
 - The **target network** provides stable target Q-values, making training more robust.
 
 By following this loop, the agent gradually learns to improve its performance in Connect 4 by playing many games and refining its Q-value estimates. Let me know if you'd like further clarification!
+
+In short, the bot improves by repeatedly sampling experiences from the replay buffer, computing stable Q-value targets (with the help of the target network), and training the main Q-network (model) to match those targets.
